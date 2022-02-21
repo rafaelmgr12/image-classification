@@ -1,14 +1,16 @@
-import { useState, useEffect, useRef } from "react";
-
 import * as mobilenet from "@tensorflow-models/mobilenet";
+import { useState, useEffect, useRef } from "react";
 
 export default function App() {
   const [isModelLoading, setIsModelLoading] = useState(false);
   const [model, setModel] = useState(null);
   const [imageURL, setImageURL] = useState(null);
   const [results, setResults] = useState([]);
+  const [history, setHistory] = useState([]);
 
   const imageRef = useRef();
+  const textInputRef = useRef();
+  const fileInputRef = useRef();
 
   async function loadModel() {
     setIsModelLoading(true);
@@ -31,12 +33,30 @@ export default function App() {
     }
   }
   async function classify() {
+    textInputRef.current.value = "";
+
     const results = await model.classify(imageRef.current);
     setResults(results);
   }
+
+  function handleOnChange(e) {
+    setImageURL(e.target.value);
+    setResults([]);
+  }
+
+  function triggerUpload() {
+    fileInputRef.current.click();
+  }
+
   useEffect(() => {
     loadModel();
   }, []);
+
+  useEffect(() => {
+    if (imageURL) {
+      setHistory([imageURL, ...history]);
+    }
+  }, [imageURL]);
 
   if (isModelLoading) {
     return <h2> Model is loading</h2>;
@@ -46,7 +66,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1 className="header">Image Classify</h1>
+      <h1 className="header">Image Identification</h1>
       <div className="inputHolder">
         <input
           type="file"
@@ -54,6 +74,17 @@ export default function App() {
           capture="camera"
           className="uploadInput"
           onChange={uploadImage}
+          ref={fileInputRef}
+        />
+        <button className="uploadImage" onClick={triggerUpload}>
+          Upload Image
+        </button>
+        <span className="or">OR</span>
+        <input
+          type="text"
+          placeholder="Paster image URL"
+          ref={textInputRef}
+          onChange={handleOnChange}
         />
       </div>
       <div className="mainWrapper">
@@ -92,6 +123,24 @@ export default function App() {
           </button>
         )}
       </div>
+      {history.length > 0 && (
+        <div className="recentPredictions">
+          <h2>Recent Images</h2>
+          <div className="recentImages">
+            {history.map((image, index) => {
+              return (
+                <div className="recentPrediction" key={`${image}${index}`}>
+                  <img
+                    src={image}
+                    alt="Recent Prediction"
+                    onClick={() => setImageURL(image)}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
