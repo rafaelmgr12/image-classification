@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Image Classification
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![clipboard.png](inkdrop://file:1BQfk_G9s)
+## ⚙️ Technologies 
+* [ReactJs](https://reactjs.org/)
+* [Firebase](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiMh6bpkJP2AhVBD5EKHY57AXYYABABGgJjZQ&ohost=www.google.com&cid=CAESWOD2aJQ9UAlMGkhr4SHDIoCl6xq_ujMKwoih3wA2pPyAEysU_U000FDo2Ud2MYBy3wCmIU_6ZrLL91qTyd2zqWE9MfbkzEnRcXyNx6N0NTlBPMifTCCRUT4&sig=AOD64_2gc59V47PYnkKP43DnmrkLua23BA&q&adurl&ved=2ahUKEwj-_Z7pkJP2AhUSIbkGHRbtAEcQ0Qx6BAgFEAE)
+* [TensorflowJS](https://www.tensorflow.org/js)
+* [Create React App](https://github.com/facebook/create-react-app).
+## 🛸 How to run it
+Clone this repository and access its directory
+```bash
+git clone https://github.com/rafaelmgr12/image-classification.git
+cd image-classification
+```
 
-## Available Scripts
+Now to start, use the following commands
+```bash
+  # install depedencies
+  yarn
+  # init project
+  yarn start
+```
 
-In the project directory, you can run:
+The app will be available in your browser at http://localhost:3000.
 
-### `yarn start`
+Remembering that it will be necessary to create an account on [Firebase](https://firebase.google.com/) and a project to deploy on web.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🤖 Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This Project was made for my interest in machine learning. The pre-trained model was chosen, [mobilenet](https://arxiv.org/abs/1704.04861), for classification/identification of objects. You can find more information on how to implement this model at https://keras.io/api/applications/mobilenet/ .
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  👣 Next Steps
+- [ ] Add Typescript
+- [ ] Add Styled Components
 
-### `yarn build`
+##  📝 License
+This project is under the MIT license. See the [LICENSE](LICENSE.md) file for more details.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+Made by Rafael Ribeiro with ❤️
