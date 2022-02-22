@@ -29,8 +29,9 @@ Remembering that it will be necessary to create an account on [Firebase](https:/
 
 ## 🤖 Project
 
-This Project was made for my interest in machine learning. The pre-trained model was chosen, [mobilenet](https://arxiv.org/abs/1704.04861), for classification/identification of objects. You can find more information on how to implement this model [here](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet) .
+This Project was made for my interest in machine learning. The pre-trained model was chosen, [mobilenet](https://arxiv.org/abs/1704.04861), for classification/identification of objects. You can find more information on how to implement this model [here](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet).
 
+This project can be found at this [link](https://image-classify-4ed0f.web.app/)
 
 ##  👣 Next Steps
 - [ ] Add Typescript
