@@ -66,7 +66,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1 className="header">Image Identification</h1>
+      <h1 className="header">Image Classification</h1>
       <div className="inputHolder">
         <input
           type="file"
