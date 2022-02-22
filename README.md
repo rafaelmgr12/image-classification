@@ -36,6 +36,8 @@ This project can be found at this [link](https://image-classify-4ed0f.web.app/)
 ##  👣 Next Steps
 - [ ] Add Typescript
 - [ ] Add Styled Components
+- [ ] Add New models
+
 
 ##  📝 License
 This project is under the MIT license. See the [LICENSE](LICENSE.md) file for more details.
