@@ -1,6 +1,8 @@
 # Image Classification
 
-![clipboard.png](inkdrop://file:1BQfk_G9s)
+![clipboard.png](image/1BQfk_G9s-clipboard.png)
+
+---
 ## ⚙️ Technologies 
 * [ReactJs](https://reactjs.org/)
 * [Firebase](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiMh6bpkJP2AhVBD5EKHY57AXYYABABGgJjZQ&ohost=www.google.com&cid=CAESWOD2aJQ9UAlMGkhr4SHDIoCl6xq_ujMKwoih3wA2pPyAEysU_U000FDo2Ud2MYBy3wCmIU_6ZrLL91qTyd2zqWE9MfbkzEnRcXyNx6N0NTlBPMifTCCRUT4&sig=AOD64_2gc59V47PYnkKP43DnmrkLua23BA&q&adurl&ved=2ahUKEwj-_Z7pkJP2AhUSIbkGHRbtAEcQ0Qx6BAgFEAE)
@@ -27,7 +29,7 @@ Remembering that it will be necessary to create an account on [Firebase](https:/
 
 ## 🤖 Project
 
-This Project was made for my interest in machine learning. The pre-trained model was chosen, [mobilenet](https://arxiv.org/abs/1704.04861), for classification/identification of objects. You can find more information on how to implement this model at https://keras.io/api/applications/mobilenet/ .
+This Project was made for my interest in machine learning. The pre-trained model was chosen, [mobilenet](https://arxiv.org/abs/1704.04861), for classification/identification of objects. You can find more information on how to implement this model [here](https://github.com/tensorflow/tfjs-models/tree/master/mobilenet) .
 
 
 ##  👣 Next Steps
